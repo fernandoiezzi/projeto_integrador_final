@@ -35,3 +35,12 @@ Cnpj_emp int not null,
 primary key(id_vaga),
 foreign key(id_usuario) references first_work.usuario(id),
 foreign key(Cnpj_emp) references first_work.empresa(CNPJ));
+
+create table if not exists log_vaga(
+id_log Int not null auto_increment,
+data_cadastro datetime,
+reg_cnpj int not null,
+reg_vaga int not null,
+primary key (id_log),
+foreign key (reg_cnpj) references first_work.empresa(CNPJ),
+foreign key (reg_vaga) references first_work.vaga(id_vaga));
