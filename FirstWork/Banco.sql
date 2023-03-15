@@ -15,17 +15,16 @@ Estado varchar(100) not null,
 email varchar(100) not null,
 descr varchar(200) not null,
 img varchar(100) not null,
-rede_social varchar(100),
-primary key (id));
+rede_social varchar(100));
+
 
 create table if not exists empresa(
-id int primary key auto_increment,,
+id int primary key auto_increment,
 CNPJ varchar(100) not null,
 nome varchar(200) not null,
 Local varchar(100) not null,
 Hora_Funcionamento Int not null,
-Logo varchar(100) not null,
-Primary key(id));
+Logo varchar(100) not null);
 
 create table if not exists vaga(
 id int primary key auto_increment,
@@ -34,16 +33,14 @@ Salario Float not null,
 carga_horaria Int not null,
 Requisitos varchar(250) not null,
 id_usuario int not null,
-id int not null,
-primary key(id),
+id_emp int not null,
 foreign key(id_usuario) references first_work.usuario(id),
 foreign key(id_emp) references first_work.empresa(id));
 
 create table if not exists log_vaga(
 id int primary key auto_increment,
 data_cadastro datetime,
-i int not null,
+reg_cnpj int not null,
 reg_vaga int not null,
-primary key (id),
 foreign key (reg_cnpj) references first_work.empresa(id),
 foreign key (reg_vaga) references first_work.vaga(id));
