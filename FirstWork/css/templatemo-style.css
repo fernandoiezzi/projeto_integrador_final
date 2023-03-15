@@ -47,6 +47,8 @@ https://templatemo.com/tm-556-catalog-z
         animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
     }
 
+  
+
     #loader:after {
         content: "";
         position: absolute;
