@@ -5,6 +5,7 @@ use first_work;
 create table if not exists usuario(
 id int not null auto_increment,
 nome varchar(200) not null,
+CPF 
 telefone varchar(100) not null,
 Data_nascimento date not null,
 Endereco varchar(200) not null,
@@ -17,7 +18,8 @@ rede_social varchar(100) not null,
 primary key (id));
 
 create table if not exists empresa(
-CNPJ int not null auto_increment,
+id int not null auto_increment,
+CNPJ 
 nome varchar(200) not null,
 Local varchar(100) not null,
 Hora_Funcionamento Int not null,
