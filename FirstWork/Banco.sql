@@ -2,6 +2,7 @@ create database if not exists first_work;
 
 use first_work;
 
+
 create table if not exists usuario(
 id int primary key auto_increment,
 nome varchar(200) not null,
