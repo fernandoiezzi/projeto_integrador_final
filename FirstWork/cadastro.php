@@ -63,6 +63,9 @@ https://templatemo.com/tm-556-catalog-z
                         <input type="text" name="name" class="form-control rounded-0" placeholder="Nome" required />
                     </div>
                     <div class="form-group">
+                        <input type="text" name="cpf" class="form-control rounded-0" placeholder="cpf" required />
+                    </div>
+                    <div class="form-group">
                         <input type="text" name="telefone" class="form-control rounded-0" placeholder="Telefone" required />
                     </div>
                     <div class="form-group">
