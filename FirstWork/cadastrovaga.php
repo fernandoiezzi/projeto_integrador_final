@@ -38,7 +38,7 @@ https://templatemo.com/tm-556-catalog-z
                     <a class="nav-link nav-link-1" aria-current="page" href="index.php">Categorias</a>
             </li>
             <li class="nav-item">
-                    <a class="nav-link nav-link-3 active" href="about.php">Sobre</a>
+                    <a class="nav-link nav-link-3" href="about.php">Sobre</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link nav-link-4" href="contact.php">Contato</a>
@@ -47,63 +47,53 @@ https://templatemo.com/tm-556-catalog-z
                     <a class="nav-link nav-link-4" href="cadastro.php">Cadastro</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-4" href="cadastrovaga.php">Cadastro de vagas</a>
+                    <a class="nav-link nav-link-4 active" href="cadastrovaga.php">Cadastro de vagas</a>
                 </li>
             </ul>
             </div>
         </div>
     </nav>
 
-    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg" ></div>
-
     <div class="container-fluid tm-mt-60">
-        <div class="row mb-4">
-            <h1 class="col-12 tm-text-primary">
-                Nossa startup 
-            </h1>
-        </div>
-        <br/>
-        <div class="row tm-mb-74 tm-row-1640">            
-            <div class="col-lg-5 col-md-6 col-12 mb-3">
-                <img src="img/about.jpg"  alt="Image" class="img-fluid">
-            </div>
-            <div class="col-md-6 col-12">
-                <div class="tm-about-img-text">
-                    <p class="mb-4">
-
-                        
-
-                       
-                                   O nosso site busca ajudar pessoas a se conectarem a empresas com visão no futuro, com vontade de dar oportunidades para novos profissionais recém formados que estão ingressando agora no mercado de trabalho.
-                                </p><p class="mb-4">
-
-                                    todos acreditamos que novos trabalhadores podem trazer diversos benefícios as empresas. podemos adquirir aprendizado para ambos os lados, ajudar na responsabilidade social da empresa, eles também serão profissionais sem vícios e também estimula os estudos para assim continuar crescendo como profissional.</p>
-
-                                <p class="mb-4">
-                                Sabendo disso nossa startup ajuda as empresas e candidatos a se encontrarem com a facilitação dessa  busca por novos funcionario e oportunidades para esses candidatos que estão entrando agora no mercado de trabalho.</p>
-
-                </div>                
-            </div>
-        </div>
-       
-
-        <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
-            <div class="container-fluid tm-container-small">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
-                        <h3 class="tm-text-primary mb-4 tm-footer-title">Sobre o First Work</h3>
-                        <p>Estamos Construindo essa plataforma que vai auxiliar jovens inexperientes a ingressar no mercado de trabalho</p>
+        <div class="row tm-mb-50">
+            <div class="col-lg-22 col-14 mb-5">
+                <h2 class="tm-text-primary text-center mb-5">Cadastro de vaga</h2>
+                <form id="contact-form" action="" method="POST" class="tm-contact-form mx-auto">
+                    <div class="form-group">
+                        <input type="text" name="cargo" class="form-control rounded-0" placeholder="Cargo" required />
                     </div>
-                    <!-- 
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
-                        <h3 class="tm-text-primary mb-4 tm-footer-title">Our Links</h3>
-                        <ul class="tm-footer-links pl-0">
-                            <li><a href="#">Advertise</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Our Company</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div> -->
+                    <div class="form-group">
+                        <input type="number" name="salario" class="form-control rounded-0" placeholder="Salário" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="cargahoraria" class="form-control rounded-0" placeholder="Carga Horária" required />
+                    </div>
+                    <div class="form-group">
+                    <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Requisitos para a vaga" required=></textarea>
+                     </div>
+                    <div class="form-group tm-text-right">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>                
+            </div>
+        </div> <!-- container-fluid, tm-container-content -->
+
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">Sobre o First Work</h3>
+                    <p>Estamos Construindo essa plataforma que vai auxiliar jovens inexperientes a ingressar no mercado de trabalho</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">Our Links</h3>
+                    <ul class="tm-footer-links pl-0">
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Our Company</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
                     <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
                         <li class="mb-2"><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
@@ -112,7 +102,6 @@ https://templatemo.com/tm-556-catalog-z
                         <li class="mb-2"><a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a></li>
                     </ul>
                    
-                     
                 </div>
             </div>
             <div class="row">
