@@ -54,7 +54,7 @@ https://templatemo.com/tm-556-catalog-z
         </div>
     </nav>
 
-<section class="page-section" id="usuarios">
+<section class="page-section" id="usuario">
     
         <div class="container-fluid tm-mt-60">
         
@@ -107,7 +107,7 @@ https://templatemo.com/tm-556-catalog-z
                     </div>
 
                     <div class="form-group">
-                        <input type="email" id="email" name="inputEmail" class="form-control rounded-0" placeholder="Email" data-sb-validations="required" />
+                        <input type="mail" id="email" name="inputEmail" class="form-control rounded-0" placeholder="Email" data-sb-validations="required" />
                         <div class="invalid-feedback" data-sb-feedback="email:required">O email é requirida.</div>
                     </div>
 

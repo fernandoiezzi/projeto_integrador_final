@@ -54,29 +54,62 @@ https://templatemo.com/tm-556-catalog-z
         </div>
     </nav>
 
+              
+
+
+
+<section class="page-section" id="vaga">
     <div class="container-fluid tm-mt-60">
         <div class="row tm-mb-50">
             <div class="col-lg-22 col-14 mb-5">
                 <h2 class="tm-text-primary text-center mb-5">Cadastro de vaga</h2>
-                <form id="contact-form" action="" method="POST" class="tm-contact-form mx-auto">
-                    <div class="form-group">
-                        <input type="text" name="cargo" class="form-control rounded-0" placeholder="Cargo" required />
-                    </div>
-                    <div class="form-group">
-                        <input type="number" name="salario" class="form-control rounded-0" placeholder="Salário" required />
-                    </div>
-                    <div class="form-group">
-                        <input type="number" name="cargahoraria" class="form-control rounded-0" placeholder="Carga Horária" required />
-                    </div>
+
+                <?php if($_GET) : ?>
+                      <h3 class="section-subheading"><strong>Ocoreu um erro ao tentar cadastrar no banco.</strong></h3>
+                 <?php endif; ?>
+
+                 <form id="vagaForm" data-sb-form-api-token="API_TOKEN" method="POST" action="php/vaga.cadastro.php" class="tm-contact-form mx-auto">
+
+
+                 <div class="form-group">
+                         <input class="form-control" id="Cargo" name="inputCargo" type="text" placeholder="Informe o Cargo"
+                        data-sb-validations="required" />
+                         <div class="invalid-feedback" data-sb-feedback="Cargo:required">O Cargo é requirida.</div>
+                 </div>
+                 
+                 <div class="form-group">
+                         <input class="form-control" id="Salario" name="inputSalario" type="number" placeholder="Informe o Salario"
+                        data-sb-validations="required" />
+                         <div class="invalid-feedback" data-sb-feedback="Salario:required">O Salario é requirida.</div>
+                 </div>
+
+                 <div class="form-group">
+                         <input class="form-control" id="carga_horaria" name="inputCarga_horaria" type="text" placeholder="Informe a Carga Horaria"
+                        data-sb-validations="required" />
+                         <div class="invalid-feedback" data-sb-feedback="Carga Horaria:required">A Carga Horaria é requirida.</div>
+                 </div>
+
+                 <div class="form-group">
+                         <input  class="form-control" id="Requisitos"  name="inputRequisitos" type="message" placeholder="Requisitos para a vaga"
+                        data-sb-validations="required" />
+                         <div class="invalid-feedback" data-sb-feedback="Requisitos:required">Requisitos para a vaga.</div>
+                 </div>
+
                     <div class="form-group">
                     <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Requisitos para a vaga" required=></textarea>
                      </div>
-                    <div class="form-group tm-text-right">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </div>
+
+                     
+                     <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Cadastrar</button></div>
                 </form>                
             </div>
         </div> <!-- container-fluid, tm-container-content -->
+    </section>
+
+
+
+
+
 
     <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
         <div class="container-fluid tm-container-small">
