@@ -68,7 +68,7 @@ https://templatemo.com/tm-556-catalog-z
                 <form id="usuarioForm" data-sb-form-api-token="API_TOKEN" method="POST" action="php/usuario.cadastro.php" class="tm-contact-form mx-auto">
 
                     <div class="form-group">
-                         <input class="form-control" id="nome" name="inputName" type="text" placeholder="Informe o nome"
+                         <input class="form-control" id="nome" name="inputNome" type="text" placeholder="Informe o nome"
                          data-sb-validations="required" />
                          <div class="invalid-feedback" data-sb-feedback="name:required">O nome é requirida.</div>
                     </div>
@@ -95,7 +95,16 @@ https://templatemo.com/tm-556-catalog-z
                         <input type="text" id="Endereco" name="inputEndereco" class="form-control rounded-0" placeholder="Endereco" data-sb-validations="required" />
                         <div class="invalid-feedback" data-sb-feedback="Endereco:required">O Endereco é requirida.</div>
                     </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="Bairro" name="inputBairro" class="form-control rounded-0" placeholder="Bairro" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="Bairro:required">O Bairro é requirida.</div>
+                    </div>
 
+                    <div class="form-group">
+                        <input type="text" id="Estado" name="inputEstado" class="form-control rounded-0" placeholder="Estado" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="Estado:required">O Estado é requirida.</div>
+                    </div>
 
                     <div class="form-group">
                         <input type="email" id="email" name="inputEmail" class="form-control rounded-0" placeholder="Email" data-sb-validations="required" />
@@ -135,7 +144,7 @@ https://templatemo.com/tm-556-catalog-z
                     </div>
 
 
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Registrar</button></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Cadastrar</button></div>
 
 
                 </form>                
