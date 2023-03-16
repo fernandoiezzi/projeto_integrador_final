@@ -5,16 +5,16 @@ use first_work;
 
 create table if not exists usuario(
 id int primary key auto_increment,
-nome varchar(200) not null,
-CPF varchar(100) not null,
-telefone varchar(100) not null,
-Data_nascimento date not null,
-Endereco varchar(200) not null,
-Bairro varchar(200) not null,
-Estado varchar(100) not null,
-email varchar(100) not null,
-descr varchar(200) not null,
-img varchar(100) not null,
+nome varchar(200),
+CPF varchar(100),
+telefone varchar(100),
+Data_nascimento date,
+Endereco varchar(200),
+Bairro varchar(200),
+Estado varchar(100),
+email varchar(100),
+descr varchar(200),
+img varchar(100),
 rede_social varchar(100));
 
 

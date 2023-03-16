@@ -15,13 +15,13 @@
     $rede_social = filter_input(INPUT_POST, 'inputRede_social', FILTER_SANITIZE_SPECIAL_CHARS);
    
 
-     if(cadastrarServico($nome, $CPF, $telefone, $Data_nascimento, $Endereco, $Bairro, $Estado, $email, $descr, $img, $rede_social ))
-     
+     if(cadastrarUsuario($nome, $CPF, $telefone, $Data_nascimento, $Endereco, $Bairro, $Estado, $email, $descr, $img, $rede_social ))
+
      {
             header('Location: ../index.php');
             exit;
         }
 
-    header('Location: ../usuario.cadastro.php?error=true');
+    header('Location: ../cadastro.php?error=true');
     exit;
 

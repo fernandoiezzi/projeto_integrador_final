@@ -54,24 +54,30 @@ https://templatemo.com/tm-556-catalog-z
         </div>
     </nav>
 
-    <div class="container-fluid tm-mt-60">
-        <div class="row tm-mb-50">
+<section class="page-section" id="usuarios">
+    
+        <div class="container-fluid tm-mt-60">
+        
             <div class="col-lg-22 col-14 mb-5">
                 <h2 class="tm-text-primary text-center mb-5">Faça já o seu cadastro</h2>
+
+                     <?php if($_GET) : ?>
+                          <h3 class="section-subheading"><strong>Ocoreu um erro ao tentar cadastrar no banco.</strong></h3>
+                     <?php endif; ?>
 
                 <form id="usuarioForm" data-sb-form-api-token="API_TOKEN" method="POST" action="php/usuario.cadastro.php" class="tm-contact-form mx-auto">
 
                     <div class="form-group">
-                        <input type="text" id="nome" name="inputName" class="form-control rounded-0" placeholder="nome" data-sb-validations="required" />
-                        <div class="invalid-feedback" data-sb-feedback="name:required">O nome é requirida.</div>
+                         <input class="form-control" id="nome" name="inputName" type="text" placeholder="Informe o nome"
+                         data-sb-validations="required" />
+                         <div class="invalid-feedback" data-sb-feedback="name:required">O nome é requirida.</div>
                     </div>
-
 
                     <div class="form-group">
-                        <input type="text" id="CPF" name="inputCPF" class="form-control rounded-0" placeholder="CPF" data-sb-validations="required" />
-                        <div class="invalid-feedback" data-sb-feedback="CPF:required">O CPF é requirida.</div>
+                         <input class="form-control" id="CPF" name="inputCPF" type="text" placeholder="Informe o CPF"
+                         data-sb-validations="required" />
+                         <div class="invalid-feedback" data-sb-feedback="CPF:required">O CPF é requirida.</div>
                     </div>
-
 
                     <div class="form-group">
                          <input type="text" id="telefone" name="inputTelefone" class="form-control rounded-0" placeholder="telefone" data-sb-validations="required" />
@@ -80,7 +86,7 @@ https://templatemo.com/tm-556-catalog-z
 
 
                     <div class="form-group">
-                         <input type="date" id="Data_nascimento" name="inputData_nascimento" class="form-control rounded-0" placeholder="Data_nascimento" data-sb-validations="required" />
+                         <input type="date" id="Data_nascimento" name="inputData_nascimento" class="form-control rounded-0" placeholder="Data Nascimento" data-sb-validations="required" />
                          <div class="invalid-feedback" data-sb-feedback="Data_nascimento:required">A Data de Nascimento é requirido.</div>
                     </div>
 
@@ -92,25 +98,25 @@ https://templatemo.com/tm-556-catalog-z
 
 
                     <div class="form-group">
-                        <input type="email" id="email" name="inputEmail" class="form-control rounded-0" placeholder="email" data-sb-validations="required" />
+                        <input type="email" id="email" name="inputEmail" class="form-control rounded-0" placeholder="Email" data-sb-validations="required" />
                         <div class="invalid-feedback" data-sb-feedback="email:required">O email é requirida.</div>
                     </div>
 
 
                     <div class="form-group">
-                        <input type="text" id="descr" name="inputDescr" class="form-control rounded-0" placeholder="descr" data-sb-validations="required" />
+                        <input type="text" id="descr" name="inputDescr" class="form-control rounded-0" placeholder="Descrição" data-sb-validations="required" />
                         <div class="invalid-feedback" data-sb-feedback="descr:required">A Descrição é requirida.</div>
                     </div>
 
 
                     <div class="form-group">
-                        <input type="text" id="img" name="inputImg" class="form-control rounded-0" placeholder="img" data-sb-validations="required" />
+                        <input type="text" id="img" name="inputImg" class="form-control rounded-0" placeholder="Imagem" data-sb-validations="required" />
                         <div class="invalid-feedback" data-sb-feedback="img:required">A imagem é requirida.</div>
                     </div>
 
 
                     <div class="form-group">
-                        <input type="text" id="rede_social" name="inputRede_social" class="form-control rounded-0" placeholder="rede_social" data-sb-validations="required" />
+                        <input type="text" id="rede_social" name="inputRede_social" class="form-control rounded-0" placeholder="Rede Social" data-sb-validations="required" />
                         <div class="invalid-feedback" data-sb-feedback="rede_social:required">A Rede Social é requirida.</div>
                     </div>
 
@@ -122,15 +128,22 @@ https://templatemo.com/tm-556-catalog-z
                         </select>
                     </div>
 
-
-                    <div class="form-group tm-text-right">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                        </div>
                     </div>
+
+
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Registrar</button></div>
 
 
                 </form>                
             </div>
-        </div> <!-- container-fluid, tm-container-content -->
+        </div>
+    </section>
+    
+    <!-- container-fluid, tm-container-content -->
 
     <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
         <div class="container-fluid tm-container-small">

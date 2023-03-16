@@ -3,11 +3,12 @@
     require_once("conexao.php");
 
     
-    function cadastrarUsuario($imagem, $titulo, $descricao) 
+    function cadastrarUsuario($nome, $CPF, $telefone, $Data_nascimento, $Endereco, $Bairro, $Estado, $email, $descr, $img, $rede_social) 
     {
         $con = getConnection();
 
         $sql = "insert into usuario (nome, CPF, telefone, Data_nascimento, Endereco, Bairro, Estado, email, descr, img, rede_social) values (:nome, :CPF, :telefone, :Data_nascimento, :Endereco, :Bairro, :Estado, :email, :descr, :img, :rede_social)";
+        
         $stmt = $con->prepare($sql);
 
         $stmt->bindParam(":nome", $nome);
