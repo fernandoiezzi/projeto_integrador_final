@@ -58,31 +58,62 @@ https://templatemo.com/tm-556-catalog-z
         <div class="row tm-mb-50">
             <div class="col-lg-22 col-14 mb-5">
                 <h2 class="tm-text-primary text-center mb-5">Faça já o seu cadastro</h2>
-                <form id="contact-form" action="" method="POST" class="tm-contact-form mx-auto">
+
+                <form id="usuarioForm" data-sb-form-api-token="API_TOKEN" method="POST" action="php/usuario.cadastro.php" class="tm-contact-form mx-auto">
+
                     <div class="form-group">
-                        <input type="text" name="name" class="form-control rounded-0" placeholder="Nome" required />
+                        <input type="text" id="nome" name="inputName" class="form-control rounded-0" placeholder="nome" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="name:required">O nome é requirida.</div>
                     </div>
+
+
                     <div class="form-group">
-                        <input type="text" name="cpf" class="form-control rounded-0" placeholder="cpf" required />
+                        <input type="text" id="CPF" name="inputCPF" class="form-control rounded-0" placeholder="CPF" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="CPF:required">O CPF é requirida.</div>
                     </div>
+
+
                     <div class="form-group">
-                        <input type="text" name="telefone" class="form-control rounded-0" placeholder="Telefone" required />
+                         <input type="text" id="telefone" name="inputTelefone" class="form-control rounded-0" placeholder="telefone" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="telefone:required">O Telefone é requirido.</div>
                     </div>
+
+
                     <div class="form-group">
-                        <input type="date" name="datanascimento" class="form-control rounded-0" placeholder="Data de Nascimento" required />
+                         <input type="date" id="Data_nascimento" name="inputData_nascimento" class="form-control rounded-0" placeholder="Data_nascimento" data-sb-validations="required" />
+                         <div class="invalid-feedback" data-sb-feedback="Data_nascimento:required">A Data de Nascimento é requirido.</div>
                     </div>
+
+
                     <div class="form-group">
-                        <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
+                        <input type="text" id="Endereco" name="inputEndereco" class="form-control rounded-0" placeholder="Endereco" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="Endereco:required">O Endereco é requirida.</div>
                     </div>
+
+
                     <div class="form-group">
-                        <input type="text" name="endereco" class="form-control rounded-0" placeholder="Endereço" required />
+                        <input type="email" id="email" name="inputEmail" class="form-control rounded-0" placeholder="email" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="email:required">O email é requirida.</div>
                     </div>
+
+
                     <div class="form-group">
-                        <input type="text" name="bairro" class="form-control rounded-0" placeholder="Bairro" required />
+                        <input type="text" id="descr" name="inputDescr" class="form-control rounded-0" placeholder="descr" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="descr:required">A Descrição é requirida.</div>
                     </div>
+
+
                     <div class="form-group">
-                        <input type="text" name="estado" class="form-control rounded-0" placeholder="Estado" required />
+                        <input type="text" id="img" name="inputImg" class="form-control rounded-0" placeholder="img" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="img:required">A imagem é requirida.</div>
                     </div>
+
+
+                    <div class="form-group">
+                        <input type="text" id="rede_social" name="inputRede_social" class="form-control rounded-0" placeholder="rede_social" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="rede_social:required">A Rede Social é requirida.</div>
+                    </div>
+
                     <div class="form-group">
                         <select class="form-control" id="contact-select" name="inquiry">
                             <option value="-">Tipo de Usuário</option>
@@ -90,13 +121,13 @@ https://templatemo.com/tm-556-catalog-z
                             <option value="creative">Usuário comum</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Faça uma breve descrição sobre você" required=></textarea>
-                    </div>
+
 
                     <div class="form-group tm-text-right">
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
+
+
                 </form>                
             </div>
         </div> <!-- container-fluid, tm-container-content -->
