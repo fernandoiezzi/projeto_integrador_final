@@ -9,11 +9,7 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
     <link rel="stylesheet" href="css/usuário_empresa.css">
-    <style>
 
-
-
-    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
