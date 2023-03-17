@@ -33,4 +33,29 @@
         return false; 
     }
 
+
+
+    function cadastrarVaga($Cargo, $Salario, $carga_horaria, $Requisitos) 
+    {
+        $con = getConnection();
+
+        $sql = "insert into usuario (Cargo, Salario, carga_horaria, Requisitos) values (:Cargo, :Salario, :carga_horaria, :Requisitos)";
+        
+        $stmt = $con->prepare($sql);
+
+        $stmt->bindParam(":Cargo", $Cargo);
+        $stmt->bindParam(":Salario", $Salario);
+        $stmt->bindParam(":carga_horaria", $carga_horaria);
+        $stmt->bindParam(":Requisitos", $Requisitos);
+
+        $status = $stmt->execute();
+        unset($con);
+        unset($stmt);
+
+        if($status)
+            return true; 
+
+        return false; 
+    }
+
     
