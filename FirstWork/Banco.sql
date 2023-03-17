@@ -32,9 +32,9 @@ Cargo varchar(100) not null,
 Salario Float not null,
 carga_horaria Int not null,
 Requisitos varchar(250) not null,
-Categoria varchar(100) not null,
 id_usuario int not null,
 id_emp int not null,
+Categoria varchar(100) not null,
 foreign key(id_usuario) references first_work.usuario(id),
 foreign key(id_emp) references first_work.empresa(id));
 
