@@ -83,7 +83,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/administracao.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Administração</h2>
-                        <a href="photo-detail.php">Ver vaga</a>
+                        <a href="categoria.php">Ver vaga</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -96,7 +96,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/agricultura.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>agricultura</h2>
-                        <a href="photo-detail.php">Ver vaga</a>
+                        <a href="categoria.php">Ver vaga</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -109,7 +109,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/biologia.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Biologia</h2>
-                        <a href="photo-detail.php">Ver vaga</a>
+                        <a href="categoria.php">Ver vaga</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -123,7 +123,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/cinema.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Cinema</h2>
-                        <a href="photo-detail.php">Ver mais</a>
+                        <a href="categoria.php">Ver mais</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -137,7 +137,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/construcao-civil.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Construção civil</h2>
-                        <a href="photo-detail.php">View more</a>
+                        <a href="categoria.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -151,7 +151,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/eletrica.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Elétrica</h2>
-                        <a href="photo-detail.php">View more</a>
+                        <a href="categoria.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -165,7 +165,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/enfermagem.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Emfermagem</h2>
-                        <a href="photo-detail.php">View more</a>
+                        <a href="categoria.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -179,7 +179,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/Engenharia.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Engenharia</h2>
-                        <a href="photo-detail.php">View more</a>
+                        <a href="categoria.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -193,7 +193,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/Industria.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Industria</h2>
-                        <a href="photo-detail.php">View more</a>
+                        <a href="categoria.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -207,7 +207,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/informatica.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Informatica</h2>
-                        <a href="photo-detail.php">View more</a>
+                        <a href="categoria.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -221,7 +221,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/medicina.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Medicina</h2>
-                        <a href="photo-detail.php">View more</a>
+                        <a href="categoria.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -235,7 +235,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/Musico.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Musica</h2>
-                        <a href="photo-detail.php">View more</a>
+                        <a href="categoria.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -249,7 +249,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/pesca.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Pesca</h2>
-                        <a href="photo-detail.php">View more</a>
+                        <a href="categoria.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -263,7 +263,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/quimica.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Quimica</h2>
-                        <a href="photo-detail.php">View more</a>
+                        <a href="categoria.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -277,7 +277,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/seguranca.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Segurança</h2>
-                        <a href="photo-detail.php">View more</a>
+                        <a href="categoria.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
@@ -291,7 +291,7 @@ https://templatemo.com/tm-556-catalog-z
                     <img src="img/social_midia.jpg" alt="Image" class="img-fluid">
                     <figcaption class="d-flex align-items-center justify-content-center">
                         <h2>Social Midia</h2>
-                        <a href="photo-detail.php">View more</a>
+                        <a href="categoria.php">View more</a>
                     </figcaption>                    
                 </figure>
                 <div class="d-flex justify-content-between tm-text-gray">
