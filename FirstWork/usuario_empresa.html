@@ -11,40 +11,44 @@
     <style>
 
 .personal-image{
- margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 }
 
 .wrapper{
-  min-height: 100vh;
+  min-height: 75vh;
   width: 100%;
   max-width: 550px;
-  text-align: center;
+  text-align: center;   
   right: auto;
-  background: #fff;
+  background: white;
   border-radius: 15px;
   padding: 25px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .img3-logo{
-  width: 120px;
-  height: 120px;
-  background: purple;
   border-radius: 50%;
+  overflow: hidden;
   position: relative;
   top: -70px;
-  left: 190px;
+  
 }
-.img3-logo{
-  width: 120px;
-  padding: 10px;
+.img3-logo img{
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
 }
 
-h3{
+h3{ 
   margin-top: -50px;
-  color: #1da1f2;
+  color: #eead2d;
+  font-weight: bold;
 }
 p{
   margin-top: 5px;
@@ -60,15 +64,15 @@ i{
 }
 
 .btn{
-  margin-top: 40px;
+  margin-top: 1px;
 }
 
 button{
-  margin: 20px;
-  width: 180px;
+  margin: 15px;
+  width: 150px;
   height: 50px;
   border: none;
-  padding: 10px;
+  padding: 10px;    
   outline: none;
   color: white;
   cursor: pointer;
@@ -78,20 +82,20 @@ button{
 }
 
 .btn button:first-child{
-  background: #1da1f2;
+  background: #66bfbf;
 }
 .btn button:last-child{
-  background: #1da1f2;
+  background: #66bfbf;
 }
 .btn button:first-child:hover{
-  background: transparent;
-  border: 1px solid #1da1f2;
-  color: #1da1f2;
+    background: #66bfbf;
+    border: 1px solid black;
+    color: black;
 }
 .btn button:last-child:hover{
-  background: transparent;
-  border: 1px solid #1da1f2;
-  color: blueviolet;
+  background: #66bfbf;
+  border: 1px solid black;
+  color: black;
 }
 
     </style>
@@ -125,6 +129,9 @@ button{
                 <li class="nav-item">
                     <a class="nav-link nav-link-4" aria-current="page" href="usuario.html">Usuário</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" aria-current="page" href="usuario_empresa.html">Empresa</a>
+                </li>
             </ul>
             </div>
         </div>
@@ -133,7 +140,7 @@ button{
     <div class="container-fluid tm-mt-60">
         <div class="row mb-4">
             <h1 class="col-12 tm-text-primary">
-                Perfil
+                Empresa
             </h1>
             <link rel="stylesheet" href="style.css">
     <link rel="preconnect"
@@ -147,34 +154,28 @@ button{
             <div class="personal-image">
                 <div class="wrapper">
                     <div class="img3-logo">
-                      <img src="pic/Logo.png">
+                      <img src="img/thexpress.jpg">
                     </div>
-                    <h3>Gusttavo Brandão</h3>
-                    <p>Tecnico de TI e Jovem Aprendiz <br>
-                        <b>Senac RJ</b>
+                    <h3>TH Express</h3>
+                    <p>Empresa de TI<br>
                         </p>
                     
                     <div class="media-info">
                       <ul>
                         <div class="row mb-4">
                             <h3 class="col-12 tm-text-primary">
-                                Sobre Mi  m
+                               Sobre a Empresa
                             </h3>
-                            <p>"Sucesso é algo que você atrai pela pessoa que você se torna"
-
-                                Acredito que valores vêm antes de dinheiro, e são o real segredo do sucesso. Acredito que ser a cada dia, melhor do que o dia anterior, é sempre uma escolha sábia. Todos queremos o pódio, a vitória, o sonho, porém a qualidade da jornada até lá, é o que realmente importa. 
-                                
-                                Vivemos em uma era desumana como nunca antes. Pessoas vêm antes de coisas. Acredito nisso. Acredito também que o sucesso de uma companhia, é o sucesso de todos de forma coletiva. Profissionais excelentes, tomam atitudes em visão macro, e não somente em micro. Nada grande se constrói sozinho, ou em um grupo mal estruturado, ou desorganizado, ou mal motivado. Nada como ajudar as pessoas certas, nada como ser ajudado pelas pessoas certas. Respeito, dedicação, cordialidade, amor, perdão, disciplina, no ambiente de trabalho são alguns dentre os itens essenciais e vitais para o sucesso temporário e a longo prazo de uma companhia. Carrego cada um deles no meu coração.
-                                
-                                Amo trabalhar em excelência, motivado e com pessoas motivadas. E gostaria muito de fazer o que amo, em sua empresa.
-                                
-                                Essa é a minha opinião sincera. Obrigado!</p>
+                            <p>TH Express é uma empresa do ramo da tecnologia voltada para progamação e desenvolvimento web que está buscando jovens para o primeiro emprego
+                                nossa sede esta localizada no Rio de Janeiro, porém buscamos jovens de todo o Brasil para trabalhar em home-office nós ajudando a atender toda a nossa
+                                demanda de clientes que esta em constante crescimento como a área do TI.
+                            </p>
                         </div>
                       </ul>
                     </div>
                     <div class="btn">
-                      <button>Message</button>
-                      <button>Follow</button>
+                      <button>Mensagem</button>
+                      <button>Seguir</button>
                     </div>
                   </div>
             </div>
