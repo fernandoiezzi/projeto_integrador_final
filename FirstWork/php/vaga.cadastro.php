@@ -6,10 +6,10 @@
     $Salario = filter_input(INPUT_POST, 'inputSalario', FILTER_SANITIZE_SPECIAL_CHARS);
     $carga_horaria = filter_input(INPUT_POST, 'inputCarga_horaria', FILTER_SANITIZE_SPECIAL_CHARS);
     $Requisitos = filter_input(INPUT_POST, 'inputRequisitos', FILTER_SANITIZE_SPECIAL_CHARS);
-    
+    $Categoria = filter_input(INPUT_POST, 'inputCategoria', FILTER_SANITIZE_SPECIAL_CHARS);
    
 
-     if(cadastrarVaga($Cargo, $Salario, $carga_horaria, $Requisitos))
+     if(cadastrarVaga($Cargo, $Salario, $carga_horaria, $Requisitos, $Categoria))
 
      {
             header('Location: ../index.php');

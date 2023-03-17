@@ -35,11 +35,11 @@
 
 
 
-    function cadastrarVaga($Cargo, $Salario, $carga_horaria, $Requisitos) 
+    function cadastrarVaga($Cargo, $Salario, $carga_horaria, $Requisitos, $Categoria) 
     {
         $con = getConnection();
 
-        $sql = "insert into usuario (Cargo, Salario, carga_horaria, Requisitos) values (:Cargo, :Salario, :carga_horaria, :Requisitos)";
+        $sql = "insert into vaga (Cargo, Salario, carga_horaria, Requisitos, Categoria) values (:Cargo, :Salario, :carga_horaria, :Requisitos, :Categoria)";
         
         $stmt = $con->prepare($sql);
 
@@ -47,6 +47,8 @@
         $stmt->bindParam(":Salario", $Salario);
         $stmt->bindParam(":carga_horaria", $carga_horaria);
         $stmt->bindParam(":Requisitos", $Requisitos);
+        $stmt->bindParam(":Categoria", $Categoria);
+
 
         $status = $stmt->execute();
         unset($con);

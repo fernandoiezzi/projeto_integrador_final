@@ -94,15 +94,20 @@ https://templatemo.com/tm-556-catalog-z
                          <div class="invalid-feedback" data-sb-feedback="Carga Horaria:required">A Carga Horaria é requirida.</div>
                  </div>
 
+                 
                  <div class="form-group">
-                         <input  class="form-control" id="Requisitos"  name="inputRequisitos" type="message" placeholder="Requisitos para a vaga"
+                         <input textarea rows="8"class="form-control" id="Requisitos"  name="inputRequisitos" type="message"  placeholder="Requisitos para a vaga " 
                         data-sb-validations="required" />
-                         <div class="invalid-feedback" data-sb-feedback="Requisitos:required">Requisitos para a vaga.</div>
+                         <div class="invalid-feedback" data-sb-feedback="Requisitos:required">Requisitos para a vaga. </textarea></div>
                  </div>
 
-                    <div class="form-group">
-                    <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Requisitos para a vaga" required=></textarea>
-                     </div>
+                 <div class="form-group">
+                         <input textarea rows="8"class="form-control" id="Categoria"  name="inputCategoria" type="message"  placeholder="Categoria da vaga  " 
+                        data-sb-validations="required" />
+                         <div class="invalid-feedback" data-sb-feedback="Categoria:required">Categoria da vaga. </textarea></div>
+                 </div>
+                 </Br>
+                    
 
                      
                      <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Cadastrar <i class="fa fa-check" aria-hidden="true"></i></button></div>
