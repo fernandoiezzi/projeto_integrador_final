@@ -29,6 +29,7 @@ Logo varchar(100) not null);
 create table if not exists vaga(
 id int primary key auto_increment,
 Cargo varchar(100) not null,
+Categoria varchar(100) not null,
 Salario Float not null,
 carga_horaria Int not null,
 Requisitos varchar(250) not null,
