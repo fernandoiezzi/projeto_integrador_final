@@ -60,5 +60,37 @@
 
         return false; 
     }
+    
+    function listaUsuario()
+    {
+        $link = getConnection();
+
+        $sql = "select * from usuario";
+    
+        $result = mysqli_query($link, $sql); 
+
+        $listaUsuario = array();
+        
+        while($usuario = mysqli_fetch_object($result))
+        {
+            array_push($listaUsuario, $usuario);
+        }
+
+        mysqli_close($link);
+        return $listaUsuario;
+    }
+
+    function localizaUsuarioPeloID($id)
+    {
+        $link = getConnection();
+
+        $sql = "select * from usuario where id = {$id}";
+
+        $usuario = mysqli_fetch_object(mysqli_query($link, $sql));
+
+        mysqli_close($link);
+
+        return $usuario;
+    }
 
     
