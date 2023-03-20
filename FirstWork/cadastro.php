@@ -98,6 +98,12 @@ https://templatemo.com/tm-556-catalog-z
 
 
                     <div class="form-group">
+                        <input type="text" id="formacao" name="inputFormacao" class="form-control rounded-0" placeholder="formacao" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="formacao:required">a formacao é requirida.</div>
+                    </div>
+
+
+                    <div class="form-group">
                         <input type="text" id="Endereco" name="inputEndereco" class="form-control rounded-0" placeholder="Endereco" data-sb-validations="required" />
                         <div class="invalid-feedback" data-sb-feedback="Endereco:required">O Endereco é requirida.</div>
                     </div>
