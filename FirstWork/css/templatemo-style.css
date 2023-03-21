@@ -402,9 +402,11 @@ figure.effect-ming figcaption::before {
 	transform: scale3d(1.4,1.4,1);
 }
 
-figure.effect-ming h2 {
+figure.effect-ming h2,h3 {
+    padding-left: 10%;
+    padding-right: 10%;
     font-size: 1.3em;
-	opacity: 0;
+	color: white;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(1.5);
@@ -412,7 +414,7 @@ figure.effect-ming h2 {
 }
 
 figure.effect-ming:hover figcaption::before,
-figure.effect-ming:hover h2 {
+figure.effect-ming:hover {
 	opacity: 1;
 	-webkit-transform: scale3d(1,1,1);
 	transform: scale3d(1,1,1);

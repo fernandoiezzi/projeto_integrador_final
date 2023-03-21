@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-    define("HOSTNAME", "localhost");
+define("HOSTNAME", "localhost");
     define("PORT", 3306);
     define("USERNAME", "root");
     define("PASSWORD", "");
@@ -13,3 +13,5 @@
         $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $con;
     }
+
+    ?>

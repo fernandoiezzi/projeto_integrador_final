@@ -27,7 +27,7 @@ Local varchar(100),
 Hora_Funcionamento varchar(100),
 Logo varchar(100) not null);
 
-create table if not exists vaga(
+create table if not exists vagas(
 id int primary key auto_increment,
 Cargo varchar(100) not null,
 Salario Float not null,

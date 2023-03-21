@@ -2,11 +2,11 @@
     require_once("agency.crud.php");
 
     
-    $Cargo = filter_input(INPUT_POST, 'inputCargo', FILTER_SANITIZE_SPECIAL_CHARS);
-    $Salario = filter_input(INPUT_POST, 'inputSalario', FILTER_SANITIZE_SPECIAL_CHARS);
-    $carga_horaria = filter_input(INPUT_POST, 'inputCarga_horaria', FILTER_SANITIZE_SPECIAL_CHARS);
-    $Requisitos = filter_input(INPUT_POST, 'inputRequisitos', FILTER_SANITIZE_SPECIAL_CHARS);
-    $Categoria = filter_input(INPUT_POST, 'inputCategoria', FILTER_SANITIZE_SPECIAL_CHARS);
+    $Cargo = filter_input(INPUT_POST, 'Cargo', FILTER_SANITIZE_SPECIAL_CHARS);
+    $Salario = filter_input(INPUT_POST, 'Salario', FILTER_SANITIZE_SPECIAL_CHARS);
+    $carga_horaria = filter_input(INPUT_POST, 'Carga_horaria', FILTER_SANITIZE_SPECIAL_CHARS);
+    $Requisitos = filter_input(INPUT_POST, 'Requisitos', FILTER_SANITIZE_SPECIAL_CHARS);
+    $Categoria = filter_input(INPUT_POST, 'Categoria', FILTER_SANITIZE_SPECIAL_CHARS);
    
 
      if(cadastrarVaga($Cargo, $Salario, $carga_horaria, $Requisitos, $Categoria))
