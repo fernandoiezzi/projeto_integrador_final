@@ -21,10 +21,10 @@ rede_social varchar(100));
 
 create table if not exists empresa(
 id int primary key auto_increment,
-CNPJ varchar(100) not null,
-nome varchar(200) not null,
-Local varchar(100) not null,
-Hora_Funcionamento Int not null,
+CNPJ varchar(100),
+nome varchar(200),
+Local varchar(100),
+Hora_Funcionamento varchar(100),
 Logo varchar(100) not null);
 
 create table if not exists vaga(

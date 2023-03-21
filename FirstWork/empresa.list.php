@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php">
                 <img src="./img/logotipo.png" width="200px" alt="">
@@ -22,25 +22,33 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                    <a class="nav-link nav-link-1" aria-current="page" href="index.php">Categorias</a>
-            </li>
-            <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" href="index.php">Categorias</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="videos.php">Videos</a>
+                </li> -->
+                <li class="nav-item">
                     <a class="nav-link nav-link-3" href="about.php">Sobre</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link nav-link-4" href="contact.php">Contato</a>
                 </li> -->
+                                   
                 <li class="nav-item">
-                    <a class="nav-link nav-link-4 active" href="cadastro.php">Cadastro</a>
+                    <a class="nav-link nav-link-4" href="cadastro.php">Cadastro</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-4" href="cadastrovaga.php">Cadastro de vagas</a>
+                    <a class="nav-link nav-link-4" href="cadastrovaga.php">Cadastro vagas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="cadastroempresa.php">Cadastro empresa</a>
                 </li>
             </ul>
             </div>
         </div>
     </nav>
+    
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg" ></div>
     <div class="container-fluid tm-mt-60">
         <div class="row mb-4">

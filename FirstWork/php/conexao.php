@@ -8,11 +8,8 @@
 
     function getConnection()
     {
-        $link = mysqli_connect(HOSTNAME, USERNAME, PASSWORD, SCHEMA, PORT);
-
-        mysqli_set_charset($link, "utf8");
-
-        mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_STRICT ^ MYSQLI_REPORT_INDEX);
-
-        return $link;
+        $key = "strval"; 
+        $con = new PDO("mysql:host={$key(HOSTNAME)};dbname={$key(SCHEMA)}", USERNAME, PASSWORD);
+        $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $con;
     }

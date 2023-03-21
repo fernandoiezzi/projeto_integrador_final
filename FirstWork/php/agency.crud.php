@@ -60,12 +60,41 @@
 
         return false; 
     }
-    
+
+
+    function cadastrarEmpresa($CNPJ, $nome, $Local, $Hora_Funcionamento, $Logo) 
+    {
+        $con = getConnection();
+
+        $sql = "insert into empresa (CNPJ, nome, Local, Hora_Funcionamento, Logo) values (:CNPJ, :nome, :Local, :Hora_Funcionamento, :Logo)";
+
+        $stmt = $con->prepare($sql);
+
+
+        $stmt->bindParam(":CNPJ", $CNPJ);
+        $stmt->bindParam(":nome", $nome);
+        $stmt->bindParam(":Local", $Local);
+        $stmt->bindParam(":Hora_Funcionamento", $Hora_Funcionamento);
+        $stmt->bindParam(":Logo", $Logo);
+
+
+        $status = $stmt->execute();
+        unset($con);
+        unset($stmt);
+
+        if($status)
+            return true; 
+
+        return false; 
+    }
+
+
     function listaUsuario()
     {
         $link = getConnection();
 
         $sql = "select * from usuario";
+
     
         $result = mysqli_query($link, $sql); 
 
@@ -79,7 +108,8 @@
         mysqli_close($link);
         return $listaUsuario;
     }
-
+  
+    
     function localizaUsuarioPeloID($id)
     {
         $link = getConnection();
@@ -92,5 +122,3 @@
 
         return $usuario;
     }
-
-    

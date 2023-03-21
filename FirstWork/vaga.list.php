@@ -1,6 +1,3 @@
-<?php include_once('./php/agency.crud.php'); ?>
-<?php foreach (listaUsuario() as $usuario) : ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,99 +8,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
-    <style>
+    <link rel="stylesheet" href="css/usuário_empresa.css">
 
-.personal-image{
- margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrapper{
-  min-height: 100vh;
-  width: 100%;
-  max-width: 550px;
-  text-align: center;
-  right: auto;
-  background: #fff;
-  border-radius: 15px;
-  padding: 25px;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.img3-logo{
-  width: 120px;
-  height: 120px;
-  background: purple;
-  border-radius: 50%;
-  position: relative;
-  top: -70px;
-  left: 190px;
-}
-.img3-logo{
-  width: 120px;
-  padding: 10px;
-}
-
-h3{
-  margin-top: -50px;
-  color: #1da1f2;
-}
-p{
-  margin-top: 5px;
-}
-.media-info{
-  margin-top: 10px;
-}
-
-i{
-  border-radius: 50%;
-  width: 22px;
-  height: 22px;
-}
-
-.btn{
-  margin-top: 40px;
-}
-
-button{
-  margin: 20px;
-  width: 180px;
-  height: 50px;
-  border: none;
-  padding: 10px;
-  outline: none;
-  color: white;
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 30px;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
-}
-
-.btn button:first-child{
-  background: #1da1f2;
-}
-.btn button:last-child{
-  background: #1da1f2;
-}
-.btn button:first-child:hover{
-  background: transparent;
-  border: 1px solid #1da1f2;
-  color: #1da1f2;
-}
-.btn button:last-child:hover{
-  background: transparent;
-  border: 1px solid #1da1f2;
-  color: blueviolet;
-}
-
-    </style>
 </head>
-
 <body>
 <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -145,14 +52,8 @@ button{
     <div class="container-fluid tm-mt-60">
         <div class="row mb-4">
             <h1 class="col-12 tm-text-primary">
-                Perfil
+                Empresa
             </h1>
-
-         <div>
-              <br/>
-              <br/>
-              <br/> 
-          </div>
             <link rel="stylesheet" href="style.css">
     <link rel="preconnect"
         href="https://fonts.gstatic.com">
@@ -162,70 +63,71 @@ button{
 </head>
  
 <body>
+    <div>
+        <br/>
+        <br/>
+        
+      
+    </div>
             <div class="personal-image">
                 <div class="wrapper">
                     <div class="img3-logo">
-                      <img src="pic/Logo.png">
+                      <img src="img/thexpress.jpg">
                     </div>
-                    <h3><?= $usuario->nome ?></h3>
-                        <p><?= $usuario->formacao ?> <br>
-                            <?= $usuario->descr ?> <br>
-                            <?= $usuario->telefone ?> <br>
-                            <?= $usuario->Data_nascimento ?> <br>
-                            <?= $usuario->Estado ?> <br>
-                            <?= $usuario->email ?> <br>
-                            <?= $usuario->descr ?> <br>
-                            <?= $usuario->rede_social ?>
+                    <h3>TH Express</h3>
+                    <p>Empresa de TI<br>
+                        </p>
+                       
                     
-                        
-                    
-      <section class="page-section" id="usuario">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase"></h2>
-                    
-                    <?php if($_GET) : ?>
-                    <h3 class="section-subheading text-danger"><strong></strong></h3>
-                    <?php endif; ?>
-                </div>
-                <table class="table table-stripped" style="color: black;">
-           
-                  
-                        
-                    <?php if($_GET) : ?>
-                        <tfoot>
-                            <tr>
-                                <?php if(isset($_GET['error'])): ?>
-                                    <td colspan="5"><h3 style="font-size: small;" class="text-danger"><strong>Ocoreu um erro ao tentar cadastrar/apagar no banco.</strong></h3></td>
-                                <?php elseif(isset($_GET['success'])): ?>
-                                    <td colspan="5"><h3 style="font-size: small;" class="text-success"><strong>Gravado/Apagado com sucesso do banco.</strong></h3></td>
-                                <?php endif; ?>
-                            </tr>
-                        </tfoot>
-                    <?php endif; ?>
-                </table>
-            </div>
-        </section>
-                        
+                    <div class="media-info">
+                      <ul>
+                        <div class="row mb-4">
+                            <h3 class="col-12 tm-text-primary">
+                               
+                                    <br/>
+                                                           
+                                
+                               Sobre a Empresa
+                            </h3>
+
+                            <div>
+                                <br/>
+                            </div>
+                              
+                            <p>TH Express é uma empresa do ramo da tecnologia voltada para progamação e desenvolvimento web que está buscando jovens para o primeiro emprego
+                                nossa sede esta localizada no Rio de Janeiro, porém buscamos jovens de todo o Brasil para trabalhar em home-office nós ajudando a atender toda a nossa
+                                demanda de clientes que esta em constante crescimento como a área do TI.
+                            </p>
+                        </div>
+                      </ul>
+                    </div>
                     <div class="btn">
-                      <button>Message</button>
-                      <button>Follow</button>
+                      <button>Mensagem</button>
+                      <button>Seguir</button>
+                      
                     </div>
-                  </div>
+                </div>
+           
             </div>
             <div>
-               <br/>
-               <br/>
-               <br/>  
+                <br/>
+                <br/>
+                <br/>
+              
             </div>
-  </body>
+      </body>
+
+     
+
+     
 
     <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <br/>
+        <br/>
+       
         <div class="container-fluid tm-container-small">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
-                    <br/>
-                    <br/>
                     <h3 class="tm-text-primary mb-4 tm-footer-title">Sobre o First Work</h3>
                     <p>Estamos Construindo essa plataforma que vai auxiliar jovens inexperientes a ingressar no mercado de trabalho</p>
                 </div>
@@ -271,4 +173,3 @@ button{
 </html>
 </body>
 </html>
-<?php endforeach; ?>

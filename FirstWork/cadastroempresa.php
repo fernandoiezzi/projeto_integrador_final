@@ -67,11 +67,11 @@ https://templatemo.com/tm-556-catalog-z
 
 
 
-<section class="page-section" id="vaga">
+<section class="page-section" id="empresa">
     <div class="container-fluid tm-mt-60">
         <div class="row tm-mb-50">
             <div class="col-lg-22 col-14 mb-5">
-                <h2 class="tm-text-primary text-center mb-5">Cadastro de vaga</h2>
+                <h2 class="tm-text-primary text-center mb-5">Cadastro de empresa</h2>
 
                 <div id="alertBox">
                     <?php if($_GET) : ?>
@@ -80,38 +80,38 @@ https://templatemo.com/tm-556-catalog-z
                 </div>
 
 
-                 <form id="vagaForm" data-sb-form-api-token="API_TOKEN" method="POST" action="php/vaga.cadastro.php" class="tm-contact-form mx-auto">
+                 <form id="empresaForm" data-sb-form-api-token="API_TOKEN" method="POST" action="php/empresa.cadastro.php" class="tm-contact-form mx-auto">
 
 
                  <div class="form-group">
-                         <input class="form-control" id="Cargo" name="inputCargo" type="text" placeholder="Informe o Cargo"
+                         <input class="form-control" id="CNPJ" name="inputCNPJ" type="text" placeholder="Informe o CNPJ"
                         data-sb-validations="required" />
-                         <div class="invalid-feedback" data-sb-feedback="Cargo:required">O Cargo é requirida.</div>
+                         <div class="invalid-feedback" data-sb-feedback="CNPJ:required">O CNPJ é requirida.</div>
                  </div>
                  
                  <div class="form-group">
-                         <input class="form-control" id="Salario" name="inputSalario" type="number" placeholder="Informe o Salario"
+                         <input class="form-control" id="nome" name="inputNome" type="text" placeholder="Informe o nome"
                         data-sb-validations="required" />
-                         <div class="invalid-feedback" data-sb-feedback="Salario:required">O Salario é requirida.</div>
+                         <div class="invalid-feedback" data-sb-feedback="nome:required">O nome é requirida.</div>
                  </div>
 
                  <div class="form-group">
-                         <input class="form-control" id="carga_horaria" name="inputCarga_horaria" type="text" placeholder="Informe a Carga Horaria"
+                         <input class="form-control" id="Local" name="inputLocal" type="text" placeholder="Informe o Local"
                         data-sb-validations="required" />
-                         <div class="invalid-feedback" data-sb-feedback="Carga Horaria:required">A Carga Horaria é requirida.</div>
+                         <div class="invalid-feedback" data-sb-feedback="Local:required">o Local é requirida.</div>
                  </div>
 
                  
                  <div class="form-group">
-                         <input textarea rows="8"class="form-control" id="Requisitos"  name="inputRequisitos" type="message"  placeholder="Requisitos para a vaga " 
+                         <input class="form-control" id="Hora_Funcionamento"  name="inputHora_Funcionamento" type="text"  placeholder="Hora_Funcionamento para a vaga " 
                         data-sb-validations="required" />
-                         <div class="invalid-feedback" data-sb-feedback="Requisitos:required">Requisitos para a vaga. </textarea></div>
+                         <div class="invalid-feedback" data-sb-feedback="Hora_Funcionamento:required">Hora_Funcionamento para a vaga. </textarea></div>
                  </div>
 
                  <div class="form-group">
-                         <input textarea rows="8"class="form-control" id="Categoria"  name="inputCategoria" type="message"  placeholder="Categoria da vaga  " 
+                         <input class="form-control" id="Logo"  name="inputLogo" type="text"  placeholder="Logo da empresa " 
                         data-sb-validations="required" />
-                         <div class="invalid-feedback" data-sb-feedback="Categoria:required">Categoria da vaga. </textarea></div>
+                         <div class="invalid-feedback" data-sb-feedback="Logo:required">Logo da empresa. </textarea></div>
                  </div>
                  </Br>
                     
