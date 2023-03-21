@@ -45,7 +45,7 @@ https://templatemo.com/tm-556-catalog-z
                     <a class="nav-link nav-link-4" href="contact.php">Contato</a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link nav-link-4 active" href="cadastro.php">Cadastro</a>
+                    <a class="nav-link nav-link-4 active" href="tipocadastro.php">Cadastro</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-4" href="cadastrovaga.php">Cadastro de vagas</a>
@@ -62,7 +62,7 @@ https://templatemo.com/tm-556-catalog-z
         <div class="container-fluid tm-mt-60">
         
             <div class="col-lg-22 col-14 mb-5">
-                <h2 class="tm-text-primary text-center mb-5">Faça já o seu cadastro</h2>
+                <h2 class="tm-text-primary text-center mb-5">Cadastro de usuário</h2>
 
                 <div id="alertBox">
                     <?php if($_GET) : ?>
