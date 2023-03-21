@@ -101,35 +101,35 @@ button{
     </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.php">
-            <img src="./img/logotipo.png" width="200px" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-                <a class="nav-link nav-link-1" aria-current="page" href="index.php">Categorias</a>
-        </li>
-        <li class="nav-item">
-                <a class="nav-link nav-link-3" href="about.php">Sobre</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link nav-link-4" href="contact.php">Contato</a>
-            </li> -->
+<nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php">
+                <img src="./img/logotipo.png" width="200px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link nav-link-4 active" href="cadastro.php">Cadastro</a>
+                    <a class="nav-link nav-link-1" aria-current="page" href="index.php">Categorias</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-link-4" href="cadastrovaga.php">Cadastro de vagas</a>
-            </li>
-        </ul>
+                    <a class="nav-link nav-link-3" href="about.php">Sobre</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="contact.php">Contato</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4 active" href="tipocadastro.php">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="cadastrovaga.php">Cadastro de vagas</a>
+                </li>
+            </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg" ></div>
     <div class="container-fluid tm-mt-60">
         <div class="row mb-4">

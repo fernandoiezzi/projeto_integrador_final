@@ -44,7 +44,7 @@ https://templatemo.com/tm-556-catalog-z
                     <a class="nav-link nav-link-4 active" href="contact.php">Contato</a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link nav-link-4" href="cadastro.php">Cadastro</a>
+                    <a class="nav-link nav-link-4" href="tipocadastro.php">Cadastro</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-4" href="cadastrovaga.php">Cadastro de vagas</a>
