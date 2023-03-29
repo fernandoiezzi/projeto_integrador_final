@@ -45,4 +45,4 @@ data_cadastro datetime,
 reg_cnpj int not null,
 reg_vaga int not null,
 foreign key (reg_cnpj) references first_work.empresa(id),
-foreign key (reg_vaga) references first_work.vaga(id));
+foreign key (reg_vaga) references first_work.vagas(id));
