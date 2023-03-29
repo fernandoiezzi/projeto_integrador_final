@@ -620,7 +620,7 @@ if(isset($_POST['order'])){
                     <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5 item">
                         <li class="mb-2"><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
                         <li class="mb-2"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                        <li class="mb-2"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li class="mb-2"><a href="https://www.instagram.com/firstwork2023/?igshid=YmMyMTA2M2Y%3D"><i class="fab fa-instagram"></i></a></li>
                         <li class="mb-2"><a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a></li>
                     </ul>
                     
