@@ -339,275 +339,60 @@ if(isset($_POST['order'])){
 
 <!--  -->
 
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg"></div>        
 
 
 
+<section class="page-section" id="vaga">
+    <div class="container-fluid tm-mt-60">
+        <div class="row tm-mb-50">
+            <div class="col-lg-22 col-14 mb-5">
+                <h2 class="tm-text-primary text-center mb-5">Cadastro de vaga</h2>
 
-<div class="tm-hero d-flex justify-content-center align-items-center conteiner" data-parallax="scroll" data-image-src="img/hero.jpg">
-        <form class="d-flex tm-search-form">
-            <input class="form-control tm-search-input" type="search" id="input" onkeyup="instantSearch()" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-success tm-search-btn" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-</div>
-
-
-<div class="container-fluid tm-container-content tm-mt-60">
-        <div class="row mb-4">
-            <h2 class="col-6 tm-text-primary">
-                Categoria das vagas
-            </h2>
-            <div class="col-6 d-flex justify-content-end align-items-center">
-                <form action="" class="tm-text-primary">
-                    Page <input type="text" value="1" size="1" class="tm-input-paging tm-text-primary"> 
-                </form>
-            </div>
-        </div>
-        <div class="row tm-mb-90 tm-gallery">
-
-
-
-
-        <?php foreach ($artigos as $artigo) : ?>
-            
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item">
-                <figure class="effect-ming tm-video-item item item">
-                    <img src="img/agricultura.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2><?php echo $artigo['titulo'];?></h2>
-                        <a href="vaga-sigle.php?id=<?php echo $artigo['id']; ?>">Ver vaga</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">14 Oct 2020</span>
-                    <span>##</span>
+                <div id="alertBox">
+                    <?php if($_GET) : ?>
+                        <h3 class="section-subheading"><strong>Ocoreu um erro ao tentar cadastrar no banco.</strong></h3>
+                    <?php endif; ?>
                 </div>
+
+
+                <form method="POST" action="boxMessage.php">
+                <label for="id_boxMessage">ID da mensagem:</label>
+                    <div class="form-group">
+                        <label for="nome_boxMessage">Nome:</label>
+                        <input  class="form-control type="text" name="nome_boxMessage" id="nome_boxMessage">
+                    </div>
+                    <div class="form-group">
+                        <label for="email_boxMessage">E-mail:</label>
+                        <input class="form-control" type="email" name="email_boxMessage" id="email_boxMessage">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone_boxMessage">Telefone:</label>
+                        <input class="form-control" type="text" name="telefone_boxMessage" id="telefone_boxMessage">
+                    </div>
+                        <div class="form-group">
+                        <label for="message_boxMessage">Mensagem:</label>
+                        <textarea class="form-control" name="message_boxMessage" id="message_boxMessage"></textarea>
+                    </div>
+                        <button  class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar</button>
+                        </form>      
             </div>
-        
-            <?php endforeach; ?>
-
-
-
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item">
-                <figure class="effect-ming tm-video-item item item">
-                    <img src="img/biologia.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Biologia</h2>
-                        <a href="categoria.php">Ver vaga</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">12 Oct 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item">
-                <figure class="effect-ming tm-video-item item item">
-                    <img src="img/cinema.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Cinema</h2>
-                        <a href="categoria.php">Ver mais</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">10 Oct 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-            
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item item">
-                <figure class="effect-ming tm-video-item item item">
-                    <img src="img/construcao-civil.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Construção civil</h2>
-                        <a href="categoria.php">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">24 Sep 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item item">
-                <figure class="effect-ming tm-video-item item item">
-                    <img src="img/eletrica.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Elétrica</h2>
-                        <a href="categoria.php">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">20 Sep 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item item">
-                <figure class="effect-ming tm-video-item item item">
-                    <img src="img/enfermagem.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Emfermagem</h2>
-                        <a href="categoria.php">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">16 Sep 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item">
-                <figure class="effect-ming tm-video-item item">
-                    <img src="img/Engenharia.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Engenharia</h2>
-                        <a href="categoria.php">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">12 Sep 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item">
-                <figure class="effect-ming tm-video-item item">
-                    <img src="img/Industria.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Industria</h2>
-                        <a href="categoria.php">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">10 Sep 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item">
-                <figure class="effect-ming tm-video-item item">
-                    <img src="img/informatica.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Informatica</h2>
-                        <a href="categoria.php">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">8 Sep 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item">
-                <figure class="effect-ming tm-video-item item">
-                    <img src="img/medicina.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Medicina</h2>
-                        <a href="categoria.php">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">4 Sep 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item">
-                <figure class="effect-ming tm-video-item item">
-                    <img src="img/Musico.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Musica</h2>
-                        <a href="categoria.php">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">28 Aug 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item">
-                <figure class="effect-ming tm-video-item item">
-                    <img src="img/pesca.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Pesca</h2>
-                        <a href="categoria.php">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">22 Aug 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item">
-                <figure class="effect-ming tm-video-item item">
-                    <img src="img/quimica.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Quimica</h2>
-                        <a href="categoria.php">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">14 Aug 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 item">
-                <figure class="effect-ming tm-video-item item">
-                    <img src="img/seguranca.jpg" alt="Image" class="img-fluid">
-                    <figcaption class="d-flex align-items-center justify-content-center">
-                        <h2>Segurança</h2>
-                        <a href="categoria.php">View more</a>
-                    </figcaption>                    
-                </figure>
-                <div class="d-flex justify-content-between tm-text-gray">
-                    <span class="tm-text-gray-light">9 Aug 2020</span>
-                    <span>##</span>
-                </div>
-            </div>
-
-                     
-        </div> <!-- row -->
-        <div class="row tm-mb-90">
-            <div class="col-12 d-flex justify-content-between align-items-center tm-paging-col">
-                <a href="javascript:void(0);" class="btn btn-primary tm-btn-prev mb-2 disabled">Anterior</a>
-                <div class="tm-paging d-flex">
-                    <a href="javascript:void(0);" class="active tm-paging-link">1</a>
-                    <a href="javascript:void(0);" class="tm-paging-link">2</a>
-                    <a href="javascript:void(0);" class="tm-paging-link">3</a>
-                    <a href="javascript:void(0);" class="tm-paging-link">4</a>
-                </div>
-                <a href="javascript:void(0);" class="btn btn-primary tm-btn-next">Próxima Página</a>
-            </div>            
-        </div>
-    </div> <!-- container-fluid, tm-container-content -->
+        </div> <!-- container-fluid, tm-container-content -->
+    </section>
 
 
 
 
 
 
-
-
-
-
-
-
-<footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
         <div class="container-fluid tm-container-small">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5 item">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
                     <h3 class="tm-text-primary mb-4 tm-footer-title">Sobre o First Work</h3>
                     <p>Estamos Construindo essa plataforma que vai auxiliar jovens inexperientes a ingressar no mercado de trabalho</p>
                 </div>
-                <!-- 
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5 item">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
                     <h3 class="tm-text-primary mb-4 tm-footer-title">Our Links</h3>
                     <ul class="tm-footer-links pl-0">
                         <li><a href="#">Advertise</a></li>
@@ -615,15 +400,15 @@ if(isset($_POST['order'])){
                         <li><a href="#">Our Company</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div> -->
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5 item">
-                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5 item">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
                         <li class="mb-2"><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
                         <li class="mb-2"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
                         <li class="mb-2"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
                         <li class="mb-2"><a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a></li>
                     </ul>
-                    
+                   
                 </div>
             </div>
             <div class="row">
@@ -636,17 +421,15 @@ if(isset($_POST['order'])){
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
+    
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
@@ -658,5 +441,3 @@ if(isset($_POST['order'])){
 <!-- custom js file link  -->
 <script src="js/index.js"></script>
 
-</body>
-</html>
