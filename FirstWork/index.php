@@ -356,7 +356,7 @@ if(isset($_POST['order'])){
 <div class="container-fluid tm-container-content tm-mt-60">
         <div class="row mb-4">
             <h2 class="col-6 tm-text-primary">
-                Categoria das vagas
+            vagas
             </h2>
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <form action="" class="tm-text-primary">
